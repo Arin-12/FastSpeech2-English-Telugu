@@ -1,5 +1,4 @@
 # FastSpeech 2 Implementation for English and Telugu
-### Academic Assignment – Text-to-Speech (TTS)
 
 ## Assignment Overview
 
