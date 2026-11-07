@@ -1,0 +1,98 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets and raw audio
+English/data/wavs/
+Telugu/data/wavs/
+Telugu/data/uploads/
+
+# Intermediate preprocessing files
+English/preprocessed/mel/
+English/preprocessed/pitch/
+English/preprocessed/energy/
+Telugu/data/processed/
+Telugu/data/vectorstore/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.ipynb_checkpoints/
+
+# Temporary model outputs
+**/outputs/**/tensorboard/
+**/outputs/**/logs/
+
+FastSpeech2-master/
+
+
+# Exclude unused pretrained vocoder weights
+**/hifigan/*.pth.tar
+
+# Exclude large downloaded Telugu aligner
+Telugu/aligner/onnx/model_int8.onnx
+
+# Exclude duplicate and latest checkpoints
+English/outputs/english/latest_model.pth
+Telugu/outputs/telugu/latest_model.pth
+Telugu/checkpoints/
+
+# Keep only the selected best checkpoints
+!English/outputs/english/best_model.pth
+!Telugu/outputs/telugu/best_model.pth
+
+
+# Original FastSpeech2 implementation repositories
+English/FastSpeech2-English/
+Telugu/FastSpeech2-Telugu/
+
+# Intermediate Telugu preprocessing arrays
+**/preprocessed_data/
+
+# Original demo audio
+**/demo/
+
+# Unused pretrained vocoder assets
+**/hifigan/*.pth.tar
+**/hifigan/*.zip
+
+# Downloaded aligner
+Telugu/aligner/onnx/model_int8.onnx
+
+# Duplicate checkpoints
+English/outputs/english/latest_model.pth
+Telugu/outputs/telugu/latest_model.pth
+Telugu/checkpoints/
+
+
+# Dataset manifests, metadata and alignments
+English/data/
+English/alignments.jsonl
+English/preprocessed/
+English/preprocessed_data/
+Telugu/data/
+Telugu/alignment_test/
