@@ -44,8 +44,23 @@ The work focuses on implementing language-specific speech synthesis pipelines, p
 
 ## Datasets
 
-- **English:** Svarah – 300 aligned samples (270 training, 30 validation).
-- **Telugu:** IndicTTS – 199 usable utterances (179 training, 20 validation).
+The implementation uses publicly available speech datasets from AI4Bharat and SPRINGLab. Both datasets contain substantially more samples than were used in this assignment. Due to the limited time available for completing the assignment, representative subsets were selected and processed for model training and evaluation.
+
+### English – Svarah
+- **Source:** [AI4Bharat/Svarah](https://huggingface.co/datasets/ai4bharat/Svarah)
+- **Full dataset size:** Approximately 6,656 utterances (about 9.6 hours of speech).
+- **Subset used:** 300 aligned samples.
+- **Training split:** 270 samples.
+- **Validation split:** 30 samples.
+
+### Telugu – IndicTTS
+- **Source:** [SPRINGLab/IndicTTS_Telugu](https://huggingface.co/datasets/SPRINGLab/IndicTTS_Telugu)
+- **Full dataset size:** Approximately 8,580 utterances.
+- **Subset used:** 199 usable utterances.
+- **Training split:** 179 samples.
+- **Validation split:** 20 samples.
+
+**Dataset selection note:** The complete datasets were not used for training. Only the stated subsets were selected and processed due to the assignment's time constraints. The reported training and validation results therefore correspond to these subsets, not to training on the full datasets.
 
 Original datasets and intermediate preprocessing files are excluded from this public repository.
 
